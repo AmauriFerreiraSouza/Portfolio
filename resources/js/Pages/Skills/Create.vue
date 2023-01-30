@@ -55,7 +55,7 @@
   </AuthenticatedLayout>
 </template>
 
-    <script setup>
+<script setup>
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head, useForm } from "@inertiajs/vue3";
 import InputError from '@/Components/InputError.vue';
