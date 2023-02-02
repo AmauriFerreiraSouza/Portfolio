@@ -39,11 +39,13 @@
                 <th scope="col" class="px-6 py-3">Id</th>
                 <th scope="col" class="px-6 py-3">Name</th>
                 <th scope="col" class="px-6 py-3">Image</th>
-                <th scope="col" class="px-6 py-3">Price</th>
+                <th scope="col" class="px-6 py-3">Actions</th>
               </tr>
             </thead>
             <tbody>
-              <tr v-for="skill in skills.data" :key="skill.id"
+              <tr
+                v-for="skill in skills.data"
+                :key="skill.id"
                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
               >
                 <th
@@ -59,11 +61,26 @@
                 >
                   {{ skill.id }}
                 </th>
-                <td class="px-6 py-4">{{ skill.name}}</td>
-                <td class="px-6 py-4"><img :src="skill.image" class="w-12 h-12 rounded-full"></td>
-                <td class="px-6 py-4">Edit/Delete</td>
+                <td class="px-6 py-4">{{ skill.name }}</td>
+                <td class="px-6 py-4">
+                  <img :src="skill.image" class="w-12 h-12 rounded-full" />
+                </td>
+                <td class="px-6 py-4">
+                  <Link
+                    :href="route('skills.edit', skill.id)"
+                    class="font-medium text-blue-500 hover:text-blue-700 mr-2"
+                    >Edit</Link
+                  >
+                  <Link
+                    :href="route('skills.destroy', skill.id)"
+                    method="delete"
+                    as="button"
+                    type="button"
+                    class="font-medium text-red-500 hover:text-red-700 mr-2"
+                    >Delete</Link
+                  >
+                </td>
               </tr>
-
             </tbody>
           </table>
         </div>
@@ -76,7 +93,7 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head, Link } from "@inertiajs/vue3";
 
-defineProps ({
-    skills: Object,
+defineProps({
+  skills: Object,
 });
 </script>
