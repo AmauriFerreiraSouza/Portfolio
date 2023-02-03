@@ -36,6 +36,10 @@
                 {{ skill.name }}
               </option>
             </select>
+
+            <modal></modal>
+            <InputError class="mt-2" :message="form.errors.skill_id" />
+
           </div>
           <div>
             <InputLabel for="name" value="Name" />
