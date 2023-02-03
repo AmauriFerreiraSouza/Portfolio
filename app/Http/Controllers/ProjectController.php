@@ -65,7 +65,7 @@ class ProjectController extends Controller
             Storage::delete($project->image);
             $image = $request->file('image')->store('projects');
         }
-        
+
         $project->update([
             'skill_id' => $request->skill_id,
             'name' => $request->name,
