@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-const showMobileMenu = ref("false");
+const showMobileMenu = ref(false);
 </script>
 <template>
   <nav
@@ -33,7 +33,7 @@ const showMobileMenu = ref("false");
         >
       </a>
       <button
-        @click="showMobileMenu = !showMobileMenu"
+        @click="showMobileMenu = showMobileMenu"
         data-collapse-toggle="navbar-default"
         type="button"
         class="
@@ -67,8 +67,8 @@ const showMobileMenu = ref("false");
         </svg>
       </button>
       <div
-        class="w-full md:block md:w-auto"
-        :class="{ hidden: showMobileMenu }"
+        class="hideen w-full md:block md:w-auto"
+        :class="{hidden: showMobileMenu}"
         id="navbar-default"
       >
         <ul

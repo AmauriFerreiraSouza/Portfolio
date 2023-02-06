@@ -1,9 +1,17 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
-import Frontend from '@/Layouts/Frontend.vue';
+import FrontendLayout from '@/Layouts/Frontend.vue';
 </script>
 
 <template>
     <Head title="Bem vindo a o meu" />
-    <Frontend></Frontend>
+    <FrontendLayout>
+        <!-- Hero primary -->
+        <!-- Promote tail--500 -->
+        <!-- About secondary -->
+        <!-- Skills tail-100 -->
+        <!-- Portfólio primary -->
+        <!-- Services secondary -->
+        <!-- Contatct primary -->
+    </FrontendLayout>
 </template>
