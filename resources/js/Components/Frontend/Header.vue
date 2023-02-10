@@ -17,7 +17,7 @@ const showMobileMenu = ref("true");
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="https://flowbite.com/" class="flex items-center">
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
+          src="http://127.0.0.1:8000/img/Laravel.svg.png"
           class="h-6 mr-3 sm:h-9"
           alt="Flowbite Logo"
         />
@@ -29,7 +29,7 @@ const showMobileMenu = ref("true");
             whitespace-nowrap
             dark:text-white
           "
-          >Flowbite</span
+          >LARAVEL DEVELOPER</span
         >
       </a>
       <button
