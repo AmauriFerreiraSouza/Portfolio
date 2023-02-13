@@ -6,6 +6,7 @@ import Promote from '@/Components/Frontend/Promote.vue';
 import About from '@/Components/Frontend/About.vue';
 import Skills from '@/Components/Frontend/Skills.vue';
 import Portfolio from '@/Components/Frontend/Portfolio.vue';
+import Services from '@/Components/Frontend/Services.vue';
 
 defineProps ({
  skills: Object,
@@ -20,7 +21,7 @@ defineProps ({
         <!-- Hero primary -->
         <Hero/>
         <!-- Promote tail--500 -->
-        <Promote/>
+        <!-- <Promote/> -->
         <!-- About secondary -->
         <About/>
         <!-- Skills tail-100 -->
@@ -28,6 +29,7 @@ defineProps ({
         <!-- Portfólio primary -->
         <Portfolio :skills="skills" :projects="projects" />
         <!-- Services secondary -->
+        <Services/>
         <!-- Contatct primary -->
     </FrontendLayout>
 </template>
