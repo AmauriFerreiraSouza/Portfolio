@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-const showMobileMenu = ref("true");
+const showMobileMenu = ref("false");
 </script>
 <template>
   <nav
@@ -67,7 +67,7 @@ const showMobileMenu = ref("true");
         </svg>
       </button>
       <div
-        class="hideen w-full md:block md:w-auto"
+        class="w-full md:block md:w-auto"
         :class="{hidden: !showMobileMenu}"
         id="navbar-default"
       >
