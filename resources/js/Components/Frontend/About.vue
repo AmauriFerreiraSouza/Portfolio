@@ -28,18 +28,17 @@
           >
             <div class="flex flex-col">
               <h2 class="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3">
-                About Me
+                Sobre Mim
               </h2>
-              <P class="mb-4 text-accent">Freelance frontend Web developer</P>
+              <P class="mb-4 text-accent">Desenvolvedor Web Freelance</P>
               <hr class="mb-8 opacity-90 dark:opacity-5" />
               <p class="mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit tempore
-                earum dolorum quo consequatur rem nihil hic ducimus rerum soluta
-                neque harum velit molestiae dignissimos distinctio dolorum nisi
-                labore culpa nihil. <br />
+                Formado pela ETEC no curso de Desenvovimento de Sistema.
+                Após o termino me dediquei a trabalhar como freelance e junto de mais três amigos criamos a MazalTi especializa no desenvolvimento de soluções web. Nosso primeiro sistema foi para segurança do trabalho chamado TST Online, onde as empresas cadastravam seus funcionários e assim poderiam facilmente emitir documentos como, PPRA, PCMSO, LTCAT entre outros.
+                Também trabalhei por 2 anos e meio na 77SEG uma insurtech desenvolvedora de ferramentas digitais para venda de seguros e assistência onde auxíliava no desenvolvimento e manutenção das plataformas.
                 <br />
-                Qui doloremque quod sit accusantium unde totam inventore
-                cupiditate ratione esse maxime eum recusandae ducimus.
+                <br />
+                Hoje trabalho atualmente como freelance e procuro uma oportunidade no mercado para mostrar o que sei e aprender mais.
               </p>
             </div>
             <a href="#contact" class="btn btn-md bg-accent text-light-tail-100">

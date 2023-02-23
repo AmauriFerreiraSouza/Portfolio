@@ -103,7 +103,7 @@ const showMobileMenu = ref("false");
                 md:text-blue-700 md:p-0
               "
               aria-current="page"
-              >Home</a
+              >Inicio</a
             >
           </li>
           <li>
@@ -126,7 +126,7 @@ const showMobileMenu = ref("false");
                 dark:hover:bg-gray-700 dark:hover:text-white
                 md:dark:hover:bg-transparent
               "
-              >About</a
+              >Sobre mim</a
             >
           </li>
           <li>
@@ -149,7 +149,7 @@ const showMobileMenu = ref("false");
                 dark:hover:bg-gray-700 dark:hover:text-white
                 md:dark:hover:bg-transparent
               "
-              >Services</a
+              >Serviços</a
             >
           </li>
           <li>
@@ -172,7 +172,7 @@ const showMobileMenu = ref("false");
                 dark:hover:bg-gray-700 dark:hover:text-white
                 md:dark:hover:bg-transparent
               "
-              >Pricing</a
+              >Preços</a
             >
           </li>
           <li>
@@ -195,7 +195,7 @@ const showMobileMenu = ref("false");
                 dark:hover:bg-gray-700 dark:hover:text-white
                 md:dark:hover:bg-transparent
               "
-              >Contact</a
+              >Contato</a
             >
           </li>
         </ul>

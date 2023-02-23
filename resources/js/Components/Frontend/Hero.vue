@@ -28,7 +28,7 @@
     >
       <div class="flex flex-col md:flex-row items-center h-full pt-8">
         <div class="flex-1 flex flex-col items-center lg:items-start">
-          <p class="text-lg text-accent text-md mb-[22px]">Hey, I'm Amauri! 👋</p>
+          <p class="text-lg text-accent text-md mb-[22px]">Olá, me chamo Amauri! 👋</p>
           <h1
             class="
               text-4xl
@@ -39,8 +39,9 @@
               md:tracking-[-2px]
             "
           >
-            I Build & Design <br />
-            Web Interfaces.
+            Desenvolvedor
+            <br />
+            Web.
           </h1>
           <p
             class="
@@ -52,10 +53,9 @@
               lg:text-left
             "
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing illo ad labore
-            dolor elit.
+            Seja bem vindo, venha conhecer um pouco dos meus trabalhos
           </p>
-          <button
+          <!-- <button
             class="
               btn btn-md
               bg-accent
@@ -66,7 +66,7 @@
             "
           >
             Work with me
-          </button>
+          </button> -->
           <div class="pt-12">
             <h5
               class="
@@ -80,7 +80,7 @@
                 mb-2
               "
             >
-              Follow me on
+              Siga-me
             </h5>
             <div class="flex items-center mb-6">
               <a
