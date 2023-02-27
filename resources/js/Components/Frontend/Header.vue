@@ -1,20 +1,46 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 const showMobileMenu = ref("false");
+const scrollBg = ref(false);
+
+const navigations = [
+    {name: "Inicio", href: "#home"},
+    {name: "Sobre", href: "#about"},
+    {name: "Portfólio", href: "#portfolio"},
+    {name: "Serviços", href: "#services"},
+    {name: "Contato", href: "#contact"},
+]
+
+const setScrollBg = (value) => {
+  scrollBg.value = value;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", () => {
+    return window.scrollY > 50 ? setScrollBg(true) : setScrollBg(false);
+  });
+});
+
 </script>
 <template>
   <nav
     class="
+      w-full
+      fixed
+      z-20
       bg-light-primary
       border-gray-200
       px-2
       sm:px-4
       py-2.5
       rounded
-      dark:bg-dark-primary
     "
+    :class="{
+      'bg-light-primary dark:bg-dark-primary': scrollBg,
+      'bg-white dark:bg-slate-800': !scrollBg,
+    }"
   >
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <div class="container flex flex-wrap items-center justify-between mx-auto" bis_skin_checked="1">
       <a href="https://flowbite.com/" class="flex items-center">
         <img
           src="http://127.0.0.1:8000/img/Laravel.svg.png"
@@ -87,117 +113,25 @@ const showMobileMenu = ref("false");
             md:border-0
           "
         >
-          <li>
+          <li v-for="(navigation, index) in navigations" :key="index">
             <a
-              href="#"
+              :href="navigation.href"
               class="
-                block
+              block
                 py-2
-                pl-3
                 pr-4
-                text-white
-                bg-light-tail-500
-                dark:bg-dark-navy-100
+                pl-3
+                text-light-tail-500
                 rounded
-                md:bg-transparent
-                md:text-blue-700 md:p-0
+                dark:text-dark-navy-100
+                hover:text-light-tail-100
+                dark:hover:text-white
               "
               aria-current="page"
-              >Inicio</a
+              >{{ navigation.name }}</a
             >
           </li>
-          <li>
-            <a
-              href="#"
-              class="
-                block
-                py-2
-                pl-3
-                pr-4
-                text-gray-700
-                rounded
-                hover:bg-gray-100
-                md:hover:bg-transparent
-                md:border-0
-                md:hover:text-blue-700
-                md:p-0
-                dark:text-gray-400
-                md:dark:hover:text-white
-                dark:hover:bg-gray-700 dark:hover:text-white
-                md:dark:hover:bg-transparent
-              "
-              >Sobre mim</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="
-                block
-                py-2
-                pl-3
-                pr-4
-                text-gray-700
-                rounded
-                hover:bg-gray-100
-                md:hover:bg-transparent
-                md:border-0
-                md:hover:text-blue-700
-                md:p-0
-                dark:text-gray-400
-                md:dark:hover:text-white
-                dark:hover:bg-gray-700 dark:hover:text-white
-                md:dark:hover:bg-transparent
-              "
-              >Serviços</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="
-                block
-                py-2
-                pl-3
-                pr-4
-                text-gray-700
-                rounded
-                hover:bg-gray-100
-                md:hover:bg-transparent
-                md:border-0
-                md:hover:text-blue-700
-                md:p-0
-                dark:text-gray-400
-                md:dark:hover:text-white
-                dark:hover:bg-gray-700 dark:hover:text-white
-                md:dark:hover:bg-transparent
-              "
-              >Preços</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="
-                block
-                py-2
-                pl-3
-                pr-4
-                text-gray-700
-                rounded
-                hover:bg-gray-100
-                md:hover:bg-transparent
-                md:border-0
-                md:hover:text-blue-700
-                md:p-0
-                dark:text-gray-400
-                md:dark:hover:text-white
-                dark:hover:bg-gray-700 dark:hover:text-white
-                md:dark:hover:bg-transparent
-              "
-              >Contato</a
-            >
-          </li>
+
         </ul>
       </div>
     </div>
