@@ -28,7 +28,7 @@ const submit = () => {
 };
 </script>
 <template>
-  <section id="contact" class="section bg-light-primary dark:bg-dark-primary">
+  <section id="contact" class="section bg-light-secondary dark:bg-dark-primary">
     <div
       class="container mx-auto"
       v-motion
@@ -42,10 +42,9 @@ const submit = () => {
       }"
     >
       <div class="flex flex-col items-center text-center">
-        <h2 class="section-title">Contact Me</h2>
+        <h2 class="section-title">Contate-me</h2>
         <p class="subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-          labore nisium illum cupiditate reiciendis a numquam
+         Entre em contato comigo através do e-mail
         </p>
       </div>
       <div class="flex flex-col lg:flex-row lg:gap-x-8">
@@ -90,9 +89,9 @@ const submit = () => {
               </svg>
             </div>
             <div>
-              <h4 class="font-body text-xl mb-1">Have a question?</h4>
-              <P class="mb-1 text-paragraph">I am here to help you.</P>
-              <p class="text-accent font-normal">Email me at john@doe.com</p>
+              <h4 class="font-body text-xl mb-1">Tem alguma dúvida?</h4>
+              <P class="mb-1 text-paragraph">Estou aqui para te ajudar.</P>
+              <p class="text-accent font-normal">Envie-me um e-mail para amauridesouzaferreira@gmail.com</p>
             </div>
           </div>
           <div class="flex flex-col lg:flex-row gap-x-4">
@@ -132,9 +131,9 @@ const submit = () => {
               </svg>
             </div>
             <div>
-              <h4 class="font-body text-xl mb-1">Current Location</h4>
-              <P class="mb-1 text-paragraph">Tirana, Albania.</P>
-              <p class="text-accent font-normal">Serving clients worldwide.</p>
+              <h4 class="font-body text-xl mb-1">Localização Atual</h4>
+              <p class="mb-1 text-paragraph">São Paulo, Capital.</p>
+              <!-- <p class="text-accent font-normal">Serving clients worldwide.</p> -->
             </div>
           </div>
         </div>
@@ -150,7 +149,7 @@ const submit = () => {
               rounded-lg
             "
           >
-            Thank you for contacting me.
+            Obrigado por entrar em contato.
           </div>
           <div class="flex gap-8">
             <div>
@@ -158,7 +157,7 @@ const submit = () => {
                 v-model="form.name"
                 type="text"
                 class="input"
-                placeholder="Your Name"
+                placeholder="Seu Nome"
               />
               <span v-if="form.errors.name" class="text-sm m-2 text-red-400">{{
                 form.errors.name
@@ -169,7 +168,7 @@ const submit = () => {
                 v-model="form.email"
                 type="email"
                 class="input"
-                placeholder="Your Email"
+                placeholder="Seu E-mail"
               />
               <span v-if="form.errors.email" class="text-sm m-2 text-red-400">{{
                 form.errors.email
@@ -179,7 +178,7 @@ const submit = () => {
           <textarea
             v-model="form.body"
             class="textarea"
-            placeholder="Your Meassage"
+            placeholder="Sua Mensagem"
             spellcheck="false"
           ></textarea>
           <span v-if="form.errors.body" class="text-sm m-2 text-red-400">{{
@@ -187,7 +186,7 @@ const submit = () => {
           }}</span>
 
           <button class="btn btn-lg bg-accent hover:bg-secondary text-white">
-            Send message
+            Enviar Mensagem
           </button>
         </form>
       </div>

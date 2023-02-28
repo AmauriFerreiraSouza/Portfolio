@@ -30,7 +30,7 @@ defineProps ({
         <!-- Portfólio primary -->
         <Portfolio :skills="skills" :projects="projects" />
         <!-- Services secondary -->
-        <Services/>
+        <!-- <Services/> -->
         <!-- Contatct primary -->
         <ContactMe/>
     </FrontendLayout>

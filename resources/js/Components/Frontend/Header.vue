@@ -7,7 +7,6 @@ const navigations = [
     {name: "Inicio", href: "#home"},
     {name: "Sobre", href: "#about"},
     {name: "Portfólio", href: "#portfolio"},
-    {name: "Serviços", href: "#services"},
     {name: "Contato", href: "#contact"},
 ]
 
@@ -55,7 +54,7 @@ onMounted(() => {
             whitespace-nowrap
             dark:text-white
           "
-          >LARAVEL DEVELOPER</span
+          >DESENVOLVEDOR LARAVEL</span
         >
       </a>
       <button

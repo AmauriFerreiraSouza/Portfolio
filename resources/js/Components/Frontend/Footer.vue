@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-  <footer class="bg-light-secondary dark:bg-dark-secondary py-12">
+  <footer class="bg-light-primary dark:bg-dark-secondary py-12">
     <div class="container mx-auto">
       <div
         class="
@@ -14,10 +14,11 @@
         "
       >
         <div class="flex space-x-6 items-center justify-center">
-          <img class="h-8 w-auto" src="http://portifolio.text/img/logo.png" alt="laraveller.com" />
+          <img class="h-8 w-auto" src="http://127.0.0.1:8000/img/Laravel.svg.png" alt="laravel" />
+          <span>Laravel</span>
         </div>
         <p class="text-paragraph opacity-80 text-[15px]">
-          &copy; 2023 laraveller.com All right reserved
+          &copy; 2023 mazalti.com.br Todos os direitos reservados
         </p>
       </div>
     </div>

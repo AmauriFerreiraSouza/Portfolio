@@ -8,7 +8,7 @@ defineProps({
 <template>
   <section
     id="portfolio"
-    class="section bg-light-primary dark:bg-dark-primary min-h-[1400px]"
+    class="section bg-light-primary dark:bg-dark-primary min-h-[500px]"
   >
     <div
       class="container mx-auto"
@@ -23,10 +23,9 @@ defineProps({
       }"
     >
       <div class="flex flex-col items-center text-center">
-        <h2 class="section-title">My latest work</h2>
+        <h2 class="section-title">Meus últimos trabalhos</h2>
         <p class="subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-          labore nisium illum cupiditate reiciendis a numquam
+          Aqui estãos os meus últimos projetos desenvolvidos
         </p>
       </div>
     </div>
